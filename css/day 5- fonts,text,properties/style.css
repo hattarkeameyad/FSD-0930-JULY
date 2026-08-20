@@ -1,0 +1,21 @@
+#p1{
+    font-size: x-large;
+    text-decoration: line-through;
+}
+#p2{
+    font-size: large;
+    text-decoration: underline overline;
+}
+
+#p3
+{
+    font-size: xx-large;
+   
+
+}
+
+#p3 a{
+    color: black;
+    font-size: xx-large;
+    text-decoration: none;
+}
