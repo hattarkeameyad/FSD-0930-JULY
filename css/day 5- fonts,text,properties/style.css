@@ -1,21 +1,43 @@
-#p1{
-    font-size: x-large;
+:root{
+    --primary:#92aced;
+    --headline:128px;
+}
+@font-face {
+    font-family: "Ameya";
+    src: url(wild.ttf);
+    font-weight: 500;
+}
+
+#p1 {
+    font-size: var(--headline);
     text-decoration: line-through;
 }
-#p2{
+
+#p2 {
     font-size: large;
     text-decoration: underline overline;
+    text-align: justify;
+    background-color: var(--primary);
+    background-color: var(--primary);
 }
 
-#p3
-{
+#p3 {
     font-size: xx-large;
-   
-
+    font-family:'Courier New', Courier, monospace;
 }
 
-#p3 a{
+#p3>a {
     color: black;
     font-size: xx-large;
     text-decoration: none;
+}
+#p5{
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: 300;
+}
+#p6{
+    font-family: Ameya;
+    font-size: xx-large;
+    
 }
