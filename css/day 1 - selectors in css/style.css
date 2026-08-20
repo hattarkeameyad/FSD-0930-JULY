@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(222, 179, 148);
+}
+
+div {
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+}
+
+.fsd {
+    background-color: rgba(236, 127, 127, 0.872);
+}
+
+.da {
+    background-color: burlywood;
+    
+}
+
+.appdev {
+    background-color: blue;
+}
+
+.batch {
+    height: 500px;
+    width: 500px;
+    background-color: darkseagreen;
+}
+
+#fsd {
+    background-color: beige;
+}
+
+/* below is for student property */
+
+span {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: white;
+    margin: 5px;
+}
+
+#omkar {
+    background-color: black;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            height: 50px;
+            width: 200px;
+            background-color: rgba(239, 231, 155, 0.838);
+            display: inline-block;
+            padding: 10px;
+
+        }
+
+        .editable {
+            height: 20px;
+            width: 80px;
+            outline: none;
+            border: 0px;
+            border-bottom: solid 2px;
+            background-color: rgba(239, 231, 155, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <span>
+            text
+            <br>
+            <input class="editable" type="text" name="" id="" minlength="3" maxlength="10">
+        </span>
+
+        <span>
+            email
+            <br>
+            <input type="email" multiple name="" id="">
+        </span>
+
+        <span>
+            password
+            <br>
+            <input type="password" class="editable" maxlength="16" minlength="8" name="" id="">
+        </span>
+
+        <span>
+            number
+            <br>
+            <input class="editable" type="number" name="" min="20" step="10" id="">
+        </span>
+
+        <span>
+            date
+            <br>
+            <input type="date" name="" min="2026-09-12" max="2026-12-12" id="">
+        </span>
+        <span>
+            time
+            <br>
+            <input type="time" name="" min="09:00" max="18:00" step="03" id="">
+        </span>
+        <br>
+        <br>
+        <span>
+            date-time-local <br>
+            <input type="datetime-local" name="" min="2026-09-14T10:00" max="2026-10-14T18:00" id="">
+        </span>
+        <span>
+            color
+            <br>
+            <input type="color" name="" value="#2ab0ff" id="">
+        </span>
+        <span>
+            File
+            <br>
+            <input type="file" name="" multiple accept=".png,.pdf" id="">
+        </span>
+        <span>
+            url
+            <br>
+            <input type="url" name="" placeholder="Search your query" id="">
+        </span>
+        <br><br>
+        <span style="height: auto; width:auto;">
+            textarea <br>
+            <textarea name="" id="" cols="40" placeholder="your address goes here" required rows="10"></textarea>
+        </span>
+        <span style="height: auto;">
+            Radio BUtton <br>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male">
+            <br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" checked id="female">
+            <br>
+            <label for="other">other</label>
+            <input type="radio" name="gender" id="other">
+
+        </span>
+        <span>
+            checkboxes
+            <br>
+            <input type="checkbox" name="subject" id="subject1" value="phys"> physics
+            <input type="checkbox" name="subject" id="subject1" value="chem"> chemestry
+            <br>
+            <input type="checkbox" name="subject" id="subject1" checked value="math"> math
+            <input type="checkbox" name="subject" id="subject1" value="Bio"> bio
+
+
+        </span>
+        <span>
+            dropdown <br>
+            <select name="" id="" multiple size="1">
+                <option value="pune">Pune</option>
+                <option selected value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <optgroup label="Suburbun-pune">
+                    <option value="">Mulshi</option>
+                    <option value="">khed</option>
+                    <option value="">Moshi</option>
+
+
+                </optgroup>
+            </select>
+        </span>
+        <br><br>
+
+
+        <span>
+            <input type="submit" value="Proceede" style="padding:5px;">
+        </span>
+
+    </form>
+</body>
+
+</html>

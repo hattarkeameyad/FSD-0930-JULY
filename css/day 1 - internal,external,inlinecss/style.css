@@ -1,0 +1,14 @@
+p {
+    height: auto;
+    width: 200px;
+    font-size: xx-large;
+    background-color: rgb(50, 218, 76);
+}
+h2{
+    background-color: aquamarine;
+    color: rgb(17, 196, 236) !important;
+}
+h1{
+    background-color: chartreuse;
+    color:aliceblue;
+}

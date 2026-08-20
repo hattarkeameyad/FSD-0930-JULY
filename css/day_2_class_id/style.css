@@ -1,0 +1,54 @@
+.classroom {
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    background-color: rgb(255, 187, 61);
+}
+
+.student {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    background-color: rgb(241, 141, 141);
+}
+
+body {
+    background-color: rgb(179, 234, 234);
+}
+
+#html {
+    background-color: bisque;
+}
+
+#react {
+    background-color: cadetblue;
+}
+
+#mongodb {
+    background-color: firebrick;
+}
+
+#html>.student {
+    background-color: rgb(221, 190, 249);
+}
+
+#react>div {
+    background-color: rgb(243, 206, 159);
+}
+
+#mongodb>div {
+    background-color: rgb(201, 244, 230);
+}
+
+#shubham {
+    height: 120px;
+    width: 120px;
+    background-color: black !important;
+}
+
+
+#akshay {
+    height: 100px;
+    width: 200px;
+    background-color: chartreuse;
+}

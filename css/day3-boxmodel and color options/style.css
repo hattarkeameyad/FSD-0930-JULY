@@ -1,0 +1,83 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+.bigbox {
+    background-color: rgb(245, 227, 203);
+    height: 700px;
+    width: 700px;
+    padding: 20px;
+}
+
+.smallbox {
+    height: 80px;
+    width: 80px;
+    background-color: brown;
+    outline: 2px dotted rgb(12, 10, 10);
+    display: inline-block;
+    margin: 10px 20px 30px 40px;
+    /* border: 2px black solid; */
+    border: 20px 22px 24px 30px !important;
+    padding: 10px 20px 30px 40px;
+}
+
+.internalbox {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px rgba(26, 236, 26, 0.5);
+}
+
+.frame>img {
+    height: 100%;
+    width: 100%;
+}
+
+.colorpalet {
+    width: 1000px;
+    height: 800px;
+    background-color: rgb(55, 141, 221);
+    background-image: url("https://r1.ilikewallpaper.net/iphone-12-pro-wallpapers/download-103386/spider-man-marvel-contest-of-champions_640.jpg");
+    background-size: cover;
+}
+
+.colorholder {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    outline: black 2px solid;
+    
+}
+
+/* 0-9 , a-f */
+#c1 {
+    background-color: #1ff1f1;
+}
+
+#c2{
+    background-color: grey;
+}
+/* 0-255 or percentage but in percentage all sum should be 100% for each section */
+#c3{
+    background-color: rgb(20%, 40%, 40%);
+}
+#c4{
+    background-color: rgba(126, 246, 26, 0.2);
+}
+#c5{
+    background-color: hsl(73, 83%, 67%);
+}
+#c6{
+    background-color: hsla(124, 70%, 60%, 0.8);
+}

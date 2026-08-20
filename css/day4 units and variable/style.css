@@ -1,0 +1,76 @@
+* {
+    padding: 0px;
+    font-size: 64px;
+    margin: 0px;
+    border: 0px;
+}
+
+#b1 {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    font-size: x-large;
+}
+
+#b2 {
+    background-color: bisque;
+    height: 50vh;
+    width: 100vw;
+    font-size: 32px;
+}
+
+.outerbox {
+    height: 1000px;
+    width: 1000px;
+    font-size: 64px;
+    background-color: rgb(123, 224, 123);
+}
+
+#b3 {
+    height: 50%;
+    width: 50%;
+    background-color: aliceblue;
+    font-size: 1.5em;
+}
+
+.innerbox {
+    height: 75%;
+    background-color: rgb(168, 168, 232);
+    width: 75%;
+    font-size: 1rem;
+}
+
+.imageholder {
+    height: 50vh;
+    width: 40vw;
+    background-image: url("file1.jpg");
+    background-size: cover;
+    background-position: right;
+}
+
+.imgholder {
+    height: 800px;
+    width: 800px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url("https://static.sociofyme.com/photo/116370351/116370351.jpg");
+}
+
+.colorholder{
+    height:200px;
+    width:300px;
+}
+
+#c1{
+    background-image: linear-gradient(170deg,red,orange,yellow,green);
+}
+
+#c2{
+    background-image: radial-gradient(ellipse,red,orange,yellow,green);
+}
+.textprop{
+    height: 200px;
+    width:450px;
+    font-size: xx-large;
+    text-transform: capitalize;
+}
