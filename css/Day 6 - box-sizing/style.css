@@ -1,0 +1,24 @@
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: mediumseagreen;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.innerbox {
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue;
+    padding:80px;
+    box-sizing: border-box;
+}
+.innerinnerbox{
+    height:100px;
+    width:100px;
+    background-color: aquamarine;
+}
+
+body {
+    background-color: bisque;
+}
