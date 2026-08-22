@@ -46,6 +46,10 @@
 
 }
 
+.infoholder
+{
+    background-color: rgba(0, 0, 0, 0.281);
+}
 .title{
     display:block;
     color:rgb(22, 1, 1);

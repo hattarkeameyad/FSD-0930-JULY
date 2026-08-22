@@ -1,0 +1,27 @@
+.box{
+    height:200px;
+    width:200px;
+}
+
+#b1{
+    position: static;
+    background-color: orange;
+}
+
+#b2{
+    background-color: yellow;
+    position: relative;
+    top:100px;
+    left:150px;
+    
+}
+#b3{
+    background-color: burlywood;
+    position:absolute;
+    top:0px;
+}
+.body{
+    height:100vh;
+    width:100vw;
+    background-color: antiquewhite;
+}
