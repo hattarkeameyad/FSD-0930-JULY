@@ -1,0 +1,14 @@
+.box{
+    height:200px;
+    width:200px;
+    background-color: burlywood;
+    outline: black dashed 2px;
+    display:inline-block;
+}
+.sp{
+    height:100px;
+    display:inline-block;
+    width:100px;
+    background-color: aqua;
+    outline:red 2px dotted;
+}
