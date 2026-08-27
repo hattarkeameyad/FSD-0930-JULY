@@ -11,7 +11,8 @@
     flex-wrap: wrap;
     gap:20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction:column;
 
 }
 .child{
@@ -20,5 +21,14 @@
     background-color: cornflowerblue;
     margin:0px;
     outline: 2px dashed red;
+    
+}
+
+.even{
+    background-color:brown;
+}
+.odd{
+    background-color: white;
+    order:-1;
     
 }
