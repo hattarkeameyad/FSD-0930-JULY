@@ -1,27 +1,66 @@
-*{
-    padding:0px;
-    margin:0px;
+* {
+    padding: 0px;
+    margin: 0px;
     /* font-size: 0px; */
-    outline:1px red dashed;
+    /* outline: 1px red dashed; */
 }
-body{
+
+body {
     background-color: rgb(243, 232, 217);
 }
-.parent_container{
-    height:100vh;
-    width:100vw;
-    display:flex;
+
+.parent_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.logincard{
+
+.logincard {
     background-color: rgba(52, 47, 47, 0.37);
-    border-radius:10px;
-    height:400px;
-    width:350px;
-    display:flex;
-    flex-flow:wrap column;
+    border-radius: 10px;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-flow: wrap column;
     justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    font-size: xx-large;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.iboxholder {
+    height: 30%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:wrap column;
+    gap: 10px;;
+
+}
+.txt_box{
+    height:25px;
+    width:80%;
+    border-radius: 10px;
+    padding:5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+    height:30px;
+    width:180px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.metainfo{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
 }
