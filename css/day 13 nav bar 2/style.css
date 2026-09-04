@@ -52,8 +52,8 @@ ul>li>a {
 }
 
 ul>li>a:hover {
-    background-color: aliceblue;
-    color: rgb(71, 132, 185);
+    /* background-color: aliceblue; */
+    color: rgb(186, 199, 211);
 }
 .searchbox{
     height:30px;
