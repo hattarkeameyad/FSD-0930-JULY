@@ -26,6 +26,8 @@ ul {
     display: flex;
     list-style-type: none;
     box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul>li>a {
