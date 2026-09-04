@@ -4,9 +4,13 @@
     border: 0px;
     /* outline: yellow 2px dotted; */
 }
+body{
+    display: flex;
+    justify-content: center;
+}
 
 nav {
-    width: 100vw;
+    width: 50vw;
     height: 10%;
     background-color: rgb(71, 132, 185);
     display: flex;
@@ -14,7 +18,9 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-
+    border-radius: 25px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px 2px rgb(1, 1, 15);
 }
 
 .logo_holder {
