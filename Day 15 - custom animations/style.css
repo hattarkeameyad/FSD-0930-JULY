@@ -1,0 +1,25 @@
+.redball{
+    border-radius: 50%;
+    height:400px;
+    width:400px;
+    background-color: red;
+    border:solid 5px black;
+    animation: bounce alternate infinite 0.5s;
+}
+.box{
+    height:100vh;
+    width:100vw;    
+}
+
+
+
+@keyframes bounce {
+    
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(400px);
+
+    }
+}
