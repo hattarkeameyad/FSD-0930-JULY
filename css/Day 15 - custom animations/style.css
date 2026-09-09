@@ -29,6 +29,11 @@ body{
     width: 100vw;
 }
 
+.item{
+    height:300px;
+    width:300px;
+    background-color: yellowgreen;
+}
 
 
 @keyframes bounce {
