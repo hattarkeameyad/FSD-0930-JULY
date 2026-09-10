@@ -17,13 +17,15 @@
 
 .logincard {
     background-color: #292929;
+    padding:40px;
     height: 45%;
     width: 33%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
     gap: 5px;
 }
 
@@ -43,23 +45,27 @@ h1 {
 }
 
 .minor {
-    font-size: 14px;
+    font-size: 16px;
 }
-.controls{
-    display:flex;
+
+.controls {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:90%;
+    width: 90%;
     padding: 0px;
-    gap:10px;
+    gap: 10px;
 }
-.controls>*{
-    outline: yellow 3px dashed;
+
+.controls>* {
+    /* outline: yellow 3px dashed; */
 }
-.ibox{
-    width:80%
+
+.ibox {
+    width: 80%
 }
+
 #email {
     padding: 8px;
     font-size: 14px;
@@ -67,18 +73,37 @@ h1 {
     color: #ffffff;
     background-color: #292929;
     border: 2px solid #4f4f4f;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
 }
 
-.btn_holder{
-    width:80%;
+.btn_holder {
+    width: 80%;
 }
-#btn_next{
+
+#btn_next {
     background-color: #115ea2;
-    width:100%;
-    padding:8px;
+    width: 100%;
+    padding: 8px;
     color: #ffffff;
-    font-weight: 380;
-    font-size: 14px;
+    font-weight: 580;
+    font-size: 16px;
+}
+
+.logincard_footer {
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-self: flex-end;
+}
+
+#normal {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#link>a {
+    color: #115ea2;
+    font-size: 16px;
+    font-weight: 400;
 }
