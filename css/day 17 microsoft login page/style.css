@@ -1,0 +1,84 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://logincdn.msauth.net/shared/5/images/fluent_web_dark_2_bf5f23287bc9f60c9be2.svg");
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logincard {
+    background-color: #292929;
+    height: 45%;
+    width: 33%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.title {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+.minor {
+    font-size: 14px;
+}
+.controls{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    padding: 0px;
+    gap:10px;
+}
+.controls>*{
+    outline: yellow 3px dashed;
+}
+.ibox{
+    width:80%
+}
+#email {
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 340;
+    color: #ffffff;
+    background-color: #292929;
+    border: 2px solid #4f4f4f;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.btn_holder{
+    width:80%;
+}
+#btn_next{
+    background-color: #115ea2;
+    width:100%;
+    padding:8px;
+    color: #ffffff;
+    font-weight: 380;
+    font-size: 14px;
+}
