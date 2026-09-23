@@ -25,7 +25,7 @@ arr2[2] = 9898989898;
 console.log(`after modifying array 2 ${arr1}`)
 console.log(`after modifying array 2 ${arr2}`)
 
-//operators
+//operators arithmatic
 
 let p = 25, q = 35
 
@@ -40,6 +40,79 @@ let r = 2234234, s = 10;
 console.log("modulus division is", r % s)
 
 console.log(2 ** 4)
+
+
+//Relational Operators
+let t = 50, u = 60;
+if (t > u) {
+
+    console.log("Yes t is greater");
+}
+else {
+    console.log("NO t is smaller")
+}
+
+t = 30, u = 60;
+if (t < u) {
+
+    console.log("Yes t is smaller");
+}
+else {
+    console.log("NO t is greater")
+}
+
+t = 60, u = 60;
+if (t <= u) {
+
+    console.log("Yes t is smaller");
+}
+else {
+    console.log("NO t is greater")
+}
+
+
+t = 60, u = 60;
+if (t >= u) {
+
+    console.log("Yes t is smaller");
+}
+else {
+    console.log("NO t is greater")
+}
+
+
+t = 30, u = "30";
+if (t == u) {
+
+    console.log("yes both values are similar");
+}
+else {
+    console.log("NO value not same")
+}
+
+
+t = 30, u = "30";
+if (t === u) {
+
+    console.log("yes both values are similar");
+}
+else {
+    console.log("No value not same")
+}
+
+
+t = 30, u = "30";
+if (t !== u) {
+
+    console.log("yes both values are similar");
+}
+else {
+    console.log("No value not same")
+}
+
+
+
+//Logical Operators
 
 
 
