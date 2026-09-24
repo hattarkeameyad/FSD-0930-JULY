@@ -81,3 +81,38 @@ btn_id.addEventListener("click", () => {
 
     }
 })
+
+let getday_btn = document.getElementById('getday');
+
+getday_btn.addEventListener("click", () => {
+    let txt_dow = document.getElementById("day_of_week");
+    let txtdata = txt_dow.value;
+    let lbl_result = document.getElementById("Output");
+
+    switch (txtdata) {
+        case "1":
+            lbl_result.innerText = "Its Monday";
+            break;
+        case "2":
+            lbl_result.innerText = "Its Tuesday";
+            break;
+        case "3":
+            lbl_result.innerText = "Its Wedenesday";
+            break;
+        case "4":
+            lbl_result.innerText = "Its Thursday";
+            break;
+        case "5":
+            lbl_result.innerText = "Its Friday";
+            break;
+        case "6":
+            lbl_result.innerText = "Its Saturday";
+            break;
+        case "7":
+            lbl_result.innerText = "Its Sunday";
+            break;
+        default:
+            lbl_result.innerText = "wrong choice";
+    }
+});
+
