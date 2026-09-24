@@ -114,5 +114,73 @@ else {
 
 //Logical Operators
 
+let ab=20,ba=50,ca=20;
+
+console.log(ab<ba && ca<ba)
+
+console.log(ab>ba || ca<ba)
+
+console.log(!(ab>ba))
 
 
+//assignment operators
+
+let z=20;
+
+z+=2;
+console.log("value of z : ", z)
+z-=12;
+console.log("value of z : ", z)
+z*=2;
+console.log("value of z : ", z)
+
+z/=10;
+console.log("value of z : ", z)
+
+z%=10;
+console.log("value of z : ", z)
+
+z**=8;
+console.log("value of z : ", z)
+
+
+//increament and decrement pre and post
+
+
+let xz=10;
+
+console.log("Using Pre increment ",++xz)
+console.log("after effect",xz)
+
+console.log("before value ",xz)
+console.log("Using Pre increment ",xz++)
+console.log("after effect",xz)
+
+//ternary operators
+
+if(a>b){
+    //this block will be executed 
+}
+
+let chintu=2, pintu=3;
+let bucket=(chintu>pintu)?"chintu":"pintu";
+
+console.log(bucket);
+
+//unary operator
+
+
+a=20,b="25";
+
+console.log(-(a-(+b)))
+
+
+//conditional statements
+a=40,b=130
+if(a>b){
+    console.log("The a is greater");
+}
+
+else{
+    console.log("No a is not greater");
+}
