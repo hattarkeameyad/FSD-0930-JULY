@@ -19,3 +19,23 @@ do {
 
 } while (a < 10);
 // console.log("Loop finished")
+
+//for loop
+console.log("----------For loop------------------")
+for (let b = 1; b <= 10; b++) {
+
+    console.log("Loop Number:  ", b);
+}
+
+
+console.log("Lets see the factorial program.")
+
+
+let result = 1;
+for (let a = 1; a <= 5; a++) {
+
+    result = result * a;
+
+}
+
+console.log("Factorial of 5 is : ", result)
