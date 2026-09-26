@@ -39,3 +39,21 @@ for (let a = 1; a <= 5; a++) {
 }
 
 console.log("Factorial of 5 is : ", result)
+
+
+//for of is used when you need to use the values directly
+
+console.log("This is the for of array");
+let arr1=[12,121,34,64,123,123,6423,34,64,123,6423]
+
+for(let value of arr1 ){
+    console.log("Element is : ",value)
+}
+
+//for in is used when you want index of that perticular array
+console.log("----------this is for in array ----------")
+for(let index in arr1){
+    console.log("Index number is : ",index, " and the value is ",arr1[index] )
+}
+
+
