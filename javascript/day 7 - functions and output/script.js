@@ -35,3 +35,42 @@ function factorial(uinput) {
     console.log("The factorial of ", uinput, " Is : ", fact)
 
 }
+
+
+let counter = 0;
+function myfunction() {
+    console.log(++counter);
+}
+
+myfunction();
+myfunction();
+myfunction();
+myfunction();
+myfunction();
+myfunction();
+
+//parameterized function
+
+function myfunction2(a, b) {
+    console.log("addition is ", a + b);
+}
+
+myfunction2(20, 45);
+myfunction2(240, 45);
+myfunction2(10, 45);
+myfunction2(25, 45);
+myfunction2(260, 45);
+
+//default parameter
+
+function myfunction3(a, b = 100) {
+
+    console.log("addition is ", a + b);
+}
+
+myfunction3(20, 40);
+myfunction3(20, 4000);
+
+myfunction3(20, 20);
+
+myfunction3(20);
