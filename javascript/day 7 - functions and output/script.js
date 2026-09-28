@@ -70,7 +70,29 @@ function myfunction3(a, b = 100) {
 
 myfunction3(20, 40);
 myfunction3(20, 4000);
-
 myfunction3(20, 20);
-
 myfunction3(20);
+
+
+//function returning the value 
+
+function myfunction4() {
+    //multi line code 
+    let k = 20, l = 55;
+    return k + l;
+}
+
+
+let result = myfunction4();
+
+console.log("Function which can return the value : ", result)
+console.log("Function which can return the value : ", myfunction4())
+
+
+//function expression
+
+let myfunction5 = function () {
+    console.log("This is the function expression. . . .")
+}
+
+myfunction5();
