@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-flow: column wrap;
+            height: 550px;
+            width: 400px;
+        }
+
+        .box {
+            display: flex;
+            flex-flow: column wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .button_holder {
+            display: flex;
+            gap: 3px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="box">
+            <input type="text" name="variable1" id="var_a">
+            <input type="text" name="" id="var_b">
+            <input type="text" name="" readonly id="var_output">
+
+            <div class="button_holder">
+                <input type="button" value="Even or odd" id="even_odd">
+                <input type="button" value="Find greater" id="Greater">
+                <input type="button" value="Possitive or negative" id="positive_neg">
+                <input type="button" value="Check is prime" id="is_prime">
+                <input type="button" value="Calculate Factorial" id="factorial">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
