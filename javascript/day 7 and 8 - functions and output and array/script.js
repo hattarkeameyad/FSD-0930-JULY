@@ -96,3 +96,45 @@ let myfunction5 = function () {
 }
 
 myfunction5();
+
+
+// function puppy() {
+
+// }
+// let puppy = function () {
+
+// }
+let puppy = () => {
+    console.log("woof woof woof");
+}
+
+puppy(234, 123, 12);
+
+
+(() => {
+    console.log("This is iefe . . . ")
+})();
+
+
+// Array Functions and other stuff
+
+
+let arrp = [1, 2, 3, 4, 5, 45, 123];
+
+arrp.forEach((item) => {
+
+    console.log("|")
+    console.log(item);
+
+});
+
+
+let prices = [245, 345, 67, 1234, 7688];
+
+let updated_price = prices.map((item) => {
+    return item = item - ((item / 100) * 20)
+})
+
+for (values of updated_price) {
+    console.log(values)
+}
