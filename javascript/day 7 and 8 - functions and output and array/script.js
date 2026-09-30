@@ -173,8 +173,70 @@ console.log("is every element even number : ", every_check)
 //find method
 
 let found_number = arr4.find((item) => {
-    return item % 2 === 0;  
+    return item % 2 === 0;
 
 })
 
 console.log("The first value which is satisfying the condition is : ", found_number)
+
+
+let arr5 = [1, 2, 3, 4, 5]
+
+let product = arr5.reduce((prev, current) => prev + current, 1)
+console.log(product)
+console.log((product) / arr5.length)
+
+
+//array push method
+
+arr5.forEach((item) => {
+    console.log("Array before method : ", item);
+})
+
+
+arr5.push(99999);
+arr5.push(88888);
+
+
+
+console.log("Array after method : ", arr5);
+
+
+let popedvalue = arr5.pop();
+console.log("Array after method : ", arr5, " and popped value is ", popedvalue);
+
+popedvalue = arr5.pop();
+console.log("Array after method : ", arr5, " and popped value is ", popedvalue);
+
+popedvalue = arr5.pop();
+console.log("Array after method : ", arr5, " and popped value is ", popedvalue);
+
+popedvalue = arr5.pop();
+console.log("Array after method : ", arr5, " and popped value is ", popedvalue);
+
+popedvalue = arr5.pop();
+console.log("Array after method : ", arr5, " and popped value is ", popedvalue);
+
+arr5.push(23,12,34,534,123);
+console.log(arr5)
+let shifted = arr5.shift();
+console.log("Array after method : ", arr5, " and shifted value is ", shifted);
+
+
+ shifted = arr5.shift();
+console.log("Array after method : ", arr5, " and shifted value is ", shifted);
+
+
+ shifted = arr5.shift();
+console.log("Array after method : ", arr5, " and shifted value is ", shifted);
+
+
+ shifted = arr5.shift();
+console.log("Array after method : ", arr5, " and shifted value is ", shifted);
+
+console.log(arr5)
+
+arr5.unshift(11,22,33,54,44,33,22,11,10)
+
+console.log(arr5)
+
