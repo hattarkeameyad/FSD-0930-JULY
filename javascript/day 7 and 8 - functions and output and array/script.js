@@ -217,26 +217,36 @@ console.log("Array after method : ", arr5, " and popped value is ", popedvalue);
 popedvalue = arr5.pop();
 console.log("Array after method : ", arr5, " and popped value is ", popedvalue);
 
-arr5.push(23,12,34,534,123);
+arr5.push(23, 12, 34, 534, 123);
 console.log(arr5)
 let shifted = arr5.shift();
 console.log("Array after method : ", arr5, " and shifted value is ", shifted);
 
 
- shifted = arr5.shift();
+shifted = arr5.shift();
 console.log("Array after method : ", arr5, " and shifted value is ", shifted);
 
 
- shifted = arr5.shift();
+shifted = arr5.shift();
 console.log("Array after method : ", arr5, " and shifted value is ", shifted);
 
 
- shifted = arr5.shift();
+shifted = arr5.shift();
 console.log("Array after method : ", arr5, " and shifted value is ", shifted);
 
 console.log(arr5)
 
-arr5.unshift(11,22,33,54,44,33,22,11,10)
+arr5.unshift(11, 22, 33, 54, 44, 33, 22, 11, 10)
 
 console.log(arr5)
 
+
+arr5.splice(4, 7)
+
+console.log(arr5)
+
+arr5.unshift(11, 22, 33, 54, 44, 33, 22, 11, 10)
+
+arr5.splice(4, 7, 1111, 2222, 3333, 4444, 6666)
+
+console.log(arr5)
