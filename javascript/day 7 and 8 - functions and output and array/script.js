@@ -138,3 +138,43 @@ let updated_price = prices.map((item) => {
 for (values of updated_price) {
     console.log(values)
 }
+
+
+
+//filter method
+
+arr1 = [12, 43, 223, 46, 78, 54, 246, 11, 8, 654, 226, 333, 6, 99]
+
+
+let evenNumbers = arr1.filter((item) => {
+
+    return item % 2 === 0;
+})
+
+evenNumbers.forEach((item) => {
+    console.log("even number ", item)
+})
+
+let arr4 = [123, 11, 23, 2311232, 123, 77]
+
+let haseven = arr4.some((item) => {
+    return item % 2 === 0;
+})
+
+console.log("This checks if a single element is even ", haseven)
+
+let every_check = arr4.every((item) => {
+    return item % 2 === 0;
+
+})
+
+console.log("is every element even number : ", every_check)
+
+//find method
+
+let found_number = arr4.find((item) => {
+    return item % 2 === 0;  
+
+})
+
+console.log("The first value which is satisfying the condition is : ", found_number)
