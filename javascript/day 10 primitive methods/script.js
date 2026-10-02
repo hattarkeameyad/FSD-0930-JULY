@@ -53,15 +53,14 @@ console.log("Floor", Math.floor(de))
 let df = 3.523456789
 console.log(Math.round(df))
 
-let mynumber=25;
+let mynumber = 25;
 
 console.log(Math.sqrt(mynumber))
 
-mynumber=525;
+mynumber = 525;
 console.log(Math.cbrt(mynumber))
 
-aa=20,bb=2
-console.log(Math.pow(aa,bb))
+aa = 20, bb = 2
+console.log(Math.pow(aa, bb))
 
-
-console.log("This is the random numbewr ",Math.random())
+console.log("This is the random numbewr ", Math.random())
