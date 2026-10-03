@@ -29,3 +29,15 @@ btn_change_js.addEventListener('click', () => {
         value.style.backgroundColor = "#af9734"
     }
 })
+
+let btn_qselect = document.getElementById("qselect");
+let btn_qselect_all = document.getElementById("qselect_all");
+
+btn_qselect_all = document.querySelectorAll("qselect_allṭ");
+btn_qselect.addEventListener('click', () => {
+    let qselected = document.querySelector(".minibox");
+    let qselected2 = document.querySelector("#b3")
+
+    qselected.style.backgroundColor = "#871401"
+    qselected2.style.backgroundColor = "#118811"
+})
