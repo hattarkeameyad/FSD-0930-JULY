@@ -33,11 +33,46 @@ btn_change_js.addEventListener('click', () => {
 let btn_qselect = document.getElementById("qselect");
 let btn_qselect_all = document.getElementById("qselect_all");
 
-btn_qselect_all = document.querySelectorAll("qselect_allṭ");
 btn_qselect.addEventListener('click', () => {
     let qselected = document.querySelector(".minibox");
     let qselected2 = document.querySelector("#b3")
 
     qselected.style.backgroundColor = "#871401"
     qselected2.style.backgroundColor = "#118811"
+})
+
+btn_qselect_all.addEventListener("click", () => {
+    let qselectall = document.querySelectorAll(".minibox")
+
+    for (values of qselectall) {
+        values.style.backgroundColor = "#c38fd1"
+    }
+
+    let headingcontent = document.getElementById("heading").textContent
+    console.log(headingcontent);
+    let heading = document.getElementById("heading");
+    heading.textContent = "Now we have simplified the process"
+
+    //how to check the count 
+    let obj_li = document.getElementsByTagName("li");
+    console.log(obj_li.length);
+
+    //how to check if variable exhists?
+
+    let selected_element = document.getElementById('matching');
+
+    if (selected_element) {
+        console.log("element exhists")
+    }
+    else {
+        console.log("element is absent")
+    }
+
+    //accessing the attributes
+
+    let checking_id = document.getElementById("list")
+    console.log(checking_id.id)
+    checking_id.id = "b2"
+    console.log(checking_id.id)
+
 })
