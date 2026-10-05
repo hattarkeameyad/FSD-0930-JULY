@@ -90,8 +90,38 @@ btn_modify.addEventListener("click", () => {
 
     var_test.textContent = "This is text content"
 
-    btn_modify.innerText="Butoon also changed"
+    btn_modify.innerText = "Butoon also changed"
     // btn_modify.textContent="Button got bigger"
+    let mybox = document.getElementById('demo_box')
+    mybox.innerHTML = "<span> This is first element </span> <p> This is inserted p tag </p>"
+})
+
+document.getElementById("modify2").addEventListener('click', () => {
+    console.log("button pressed")
+    let allfullstack = document.querySelectorAll(".fullstack");
+    console.log(allfullstack)
+    allfullstack.forEach(el => {
+        el.classList.toggle("toggle")
+    })
+})
+document.getElementById("modify3").addEventListener('click', () => {
+    console.log("button pressed")
+    let allfullstack = document.querySelectorAll(".fullstack");
+    console.log(allfullstack)
+    allfullstack.forEach(el => {
+        el.classList.add("toggle2")
+    })
+})
 
 
+document.getElementById("modify4").addEventListener('click', () => {
+    console.log("button pressed")
+    let allfullstack = document.querySelectorAll(".fullstack");
+    console.log(allfullstack)
+    allfullstack.forEach(el => {
+        el.classList.remove("toggle2")
+        el.classList.remove("toggle")
+
+
+    })
 })
