@@ -76,3 +76,22 @@ btn_qselect_all.addEventListener("click", () => {
     console.log(checking_id.id)
 
 })
+
+//dommanupulation
+
+let var_test = document.getElementById("test_paragraph");
+
+
+let btn_modify = document.getElementById("modify")
+
+btn_modify.addEventListener("click", () => {
+    var_test.innerText = "Now the paragraph is changed";
+    var_test.style.width = "400px"
+
+    var_test.textContent = "This is text content"
+
+    btn_modify.innerText="Butoon also changed"
+    // btn_modify.textContent="Button got bigger"
+
+
+})
