@@ -24,8 +24,17 @@ btn_remove.addEventListener("click", () => {
 })
 
 
-let btn_getuname=document.getElementById("getuname");
-btn_getuname.addEventListener("click",()=>{
-    let uname=document.getElementById("uname")
+let btn_getuname = document.getElementById("getuname");
+btn_getuname.addEventListener("click", () => {
+    let uname = document.getElementById("uname")
     console.log(uname.value)
+})
+let btn_create = document.getElementById("create")
+
+btn_create.addEventListener('click', () => {
+
+    let new_comp = document.createElement('div');
+    new_comp.classList.add("mbox3")
+    let container = document.getElementById("c3")
+    container.appendChild(new_comp);
 })
