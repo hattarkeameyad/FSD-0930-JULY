@@ -53,7 +53,4 @@ btn_create.addEventListener('click', () => {
     let mbox3 = document.getElementById("mb3");
     mbox3.append(new_comp_p1, new_comp_p2, new_comp_p3);
 
-
-
-
 })
