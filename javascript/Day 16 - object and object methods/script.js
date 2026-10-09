@@ -74,7 +74,6 @@ console.log(student)
 //closure security password check
 
 let outerfunction = () => {
-
     let setpassword = "1234"
     return {
         checkpassword: function (input) {
@@ -82,16 +81,11 @@ let outerfunction = () => {
             return input === setpassword
         }
     }
-
 }
 
-
 let uninput_password = "1234"
-
 const ofunction = outerfunction();
-
 let result = ofunction.checkpassword(uninput_password);
-
 if (result) {
     console.log("Valid password")
 }
