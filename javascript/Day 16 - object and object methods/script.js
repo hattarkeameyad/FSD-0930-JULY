@@ -40,16 +40,61 @@ let merged = { ...person, ...car }
 console.log("After merging . . . ", merged)
 
 
-let arr_obj=Object.entries(car)
+let arr_obj = Object.entries(car)
 
 console.log(arr_obj)
 
-arr_obj[0][0]="The value is changed "
+arr_obj[0][0] = "The value is changed "
 
-arr_obj[2][0]="Value altered"
+arr_obj[2][0] = "Value altered"
 
-let arr_obj_keys=Object.keys(car);
+let arr_obj_keys = Object.keys(car);
 console.log(arr_obj_keys)
 
-let arr_obj_values=Object.values(car)
+let arr_obj_values = Object.values(car)
 console.log(arr_obj_values)
+
+let student = {
+    name: "Akshay Kumar",
+    desig: "actor",
+    class: "Bollywood"
+}
+
+console.log("before sealing", student)
+
+
+Object.seal(student)
+
+delete student.desig;
+
+student.name = "Sharukh khan"
+console.log(student)
+
+
+//closure security password check
+
+let outerfunction = () => {
+
+    let setpassword = "1234"
+    return {
+        checkpassword: function (input) {
+
+            return input === setpassword
+        }
+    }
+
+}
+
+
+let uninput_password = "1234"
+
+const ofunction = outerfunction();
+
+let result = ofunction.checkpassword(uninput_password);
+
+if (result) {
+    console.log("Valid password")
+}
+else {
+    console.log("password is invalid")
+}
