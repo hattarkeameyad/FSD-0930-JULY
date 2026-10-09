@@ -77,7 +77,6 @@ let outerfunction = () => {
     let setpassword = "1234"
     return {
         checkpassword: function (input) {
-
             return input === setpassword
         }
     }
