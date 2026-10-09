@@ -38,3 +38,18 @@ console.log(car)
 let merged = { ...person, ...car }
 
 console.log("After merging . . . ", merged)
+
+
+let arr_obj=Object.entries(car)
+
+console.log(arr_obj)
+
+arr_obj[0][0]="The value is changed "
+
+arr_obj[2][0]="Value altered"
+
+let arr_obj_keys=Object.keys(car);
+console.log(arr_obj_keys)
+
+let arr_obj_values=Object.values(car)
+console.log(arr_obj_values)
