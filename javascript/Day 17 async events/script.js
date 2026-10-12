@@ -21,8 +21,6 @@ cb.addEventListener('mouseout', () => {
     cb.classList.remove("rotate")
     cb.classList.remove("translate")
 
-    
-
 })
 
 cb.addEventListener("mousedown", () => {
@@ -35,4 +33,29 @@ cb.addEventListener("mouseup", () => {
     cb.classList.add("translate")
 })
 
+let c2 = document.getElementById("c2");
+//keypress event
 
+document.addEventListener('keydown', (event) => {
+    console.log(event.key)
+    c2.style.backgroundColor = "#123456"
+    switch (event.key) {
+        case "ArrowLeft":
+            c2.style.transform = "translateX(-150px)";
+            break;
+        case "ArrowRight":
+            c2.style.transform = "translateX(150px)";
+
+            break;
+        case "ArrowUp":
+            c2.style.transform = "translateY(-150px)";
+
+            break;
+        case "ArrowDown":
+            c2.style.transform = "translateY(150px)";
+
+            break;
+
+
+    }
+})
