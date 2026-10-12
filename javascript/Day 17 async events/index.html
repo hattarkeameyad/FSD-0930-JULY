@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        .miniframe {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-flow: column wrap;
+            box-sizing: border-box;
+            padding: 10px;
+            gap: 5px;
+            background-color: rgb(188, 189, 190);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cbox {
+            height: 200px;
+            width: 200px;
+            transition: 0.5s ease-in-out;
+            background-color: rgb(173, 170, 170);
+        }
+
+        .transition {
+            transform: scale(1.5);
+            transition: 0.5s ease-in-out;
+        }
+
+        .rotate {
+            transform: rotate(120deg);
+            transition: 0.5s ease-in-out;
+        }
+
+        .translate {
+            transform: translate(80%, 80%);
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="miniframe">
+        <div class="cbox" id="c1">
+
+        </div>
+        <input type="button" value="Click & DblClick" id="click_dblclic">
+
+    </div>
+
+
+</body>
+
+</html>
