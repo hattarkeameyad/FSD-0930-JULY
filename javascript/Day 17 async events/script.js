@@ -55,7 +55,35 @@ document.addEventListener('keydown', (event) => {
             c2.style.transform = "translateY(150px)";
 
             break;
-
-
     }
+})
+
+let txt_chat = document.getElementById("chat")
+
+txt_chat.addEventListener("input", () => {
+    setTimeout(() => {
+        document.getElementById("userop").innerText = ""
+    }, 1000)
+    document.getElementById("userop").innerText = "The User is Typing . . . "
+})
+
+txt_chat.addEventListener("change", () => {
+    console.log("You have lost the focus  . . . . ");
+
+    alert("Please dont go stay here ..")
+
+})
+
+document.getElementById("form").addEventListener('submit', () => {
+    alert("Your form is now submitted . . . .")
+})
+
+txt_chat.addEventListener('focus',()=>{
+
+    txt_chat.classList.add("large")
+      setTimeout(() => {
+            txt_chat.classList.remove("large")
+
+    }, 2000)
+    
 })
