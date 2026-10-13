@@ -74,8 +74,10 @@ txt_chat.addEventListener("change", () => {
 
 })
 
-document.getElementById("form").addEventListener('submit', () => {
+let form_f=document.getElementById("form")
+form_f.addEventListener('submit', (event) => {
     alert("Your form is now submitted . . . .")
+    event.preventDefault();
 })
 
 txt_chat.addEventListener('focus',()=>{
@@ -86,4 +88,16 @@ txt_chat.addEventListener('focus',()=>{
 
     }, 2000)
     
+})
+
+window.addEventListener("load",()=>{
+    console.log("The window is now loaded . .. ")
+})
+
+window.addEventListener("scroll",()=>{
+    console.log("TYou are scrolling . . . . . ")
+})
+
+window.addEventListener("resize",()=>{
+    console.log("size of the window is changed now  , , , , ")
 })
