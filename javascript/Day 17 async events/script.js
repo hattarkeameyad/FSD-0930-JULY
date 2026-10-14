@@ -60,7 +60,13 @@ document.addEventListener('keydown', (event) => {
 
 let txt_chat = document.getElementById("chat")
 
-txt_chat.addEventListener("input", () => {
+txt_chat.addEventListener("input", (event) => {
+    console.log("This is event key", event.key)
+    console.log("This is event key", event.target)
+
+    console.log("This is event key", event.type)
+    console.log("mouse pointer location", event.clientX, event.clientY)
+
     setTimeout(() => {
         document.getElementById("userop").innerText = ""
     }, 1000)
@@ -74,30 +80,42 @@ txt_chat.addEventListener("change", () => {
 
 })
 
-let form_f=document.getElementById("form")
+let form_f = document.getElementById("form")
 form_f.addEventListener('submit', (event) => {
     alert("Your form is now submitted . . . .")
     event.preventDefault();
 })
 
-txt_chat.addEventListener('focus',()=>{
+txt_chat.addEventListener('focus', (event) => {
+    console.log()
 
     txt_chat.classList.add("large")
-      setTimeout(() => {
-            txt_chat.classList.remove("large")
+    setTimeout(() => {
+        txt_chat.classList.remove("large")
 
     }, 2000)
-    
+
 })
 
-window.addEventListener("load",()=>{
+window.addEventListener("load", () => {
     console.log("The window is now loaded . .. ")
 })
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", (event) => {
     console.log("TYou are scrolling . . . . . ")
 })
 
-window.addEventListener("resize",()=>{
+window.addEventListener("resize", (event) => {
     console.log("size of the window is changed now  , , , , ")
+})
+
+
+let ul_list=document.getElementById('ullist')
+
+ul_list.addEventListener('click',(event)=>{
+    console.log(event.target.innerText)
+})
+
+document.getElementById("c3").addEventListener('click',(event)=>{
+    console.log(event.target)
 })
