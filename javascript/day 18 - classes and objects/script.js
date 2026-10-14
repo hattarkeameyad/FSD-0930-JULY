@@ -9,13 +9,8 @@ class person {
         console.log(this.name, this.designation)
     }
     printname = () => {
-
     }
-
 }
-
-
-
 
 const p1 = new person("Ameya", "Devops");
 
