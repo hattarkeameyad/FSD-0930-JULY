@@ -40,7 +40,33 @@ class dog extends animal {
     }
 }
 
-const d1 = new dog('pomerian','pet');
+const d1 = new dog('pomerian', 'pet');
 
 d1.print()
 d1.speak()
+
+//timer functions
+
+console.log("Code started . . .");
+
+const tout = setTimeout(() => {
+    console.log("Time is up . . . . ");
+}, 6000);
+
+console.log("Here it ends all  . . . . . ");
+
+let count = 0;
+const inter = setInterval(() => {
+    console.log("Hey . . . .  R you there . . . . .", count++);
+
+}, 2000)
+
+
+document.getElementById('btn_fetch').addEventListener('click', () => {
+    setTimeout(() => {
+        document.getElementById('output').innerText = "The status is fetched . . "
+    }, 3000)
+})
+
+
+
