@@ -68,5 +68,29 @@ document.getElementById('btn_fetch').addEventListener('click', () => {
     }, 3000)
 })
 
+let counter2 = 1;
 
+const si = setInterval(() => {
+    document.getElementById("output").innerText = counter2++;
+
+}, 2000);
+
+document.getElementById("stop").addEventListener("click", () => {
+
+    clearInterval(si);
+})
+
+
+document.getElementById('output2').innerText = "Bomb blast timer started blast will be done in 5 seconds . . . "
+const st3 = setTimeout(() => {
+    document.getElementById('output2').innerText = "Ka boom , , , , "
+
+}, 10000)
+
+document.getElementById('start').addEventListener('click',()=>{
+    clearTimeout(st3);
+    document.getElementById('output2').innerText = "bomb is defused "
+
+    
+})
 
