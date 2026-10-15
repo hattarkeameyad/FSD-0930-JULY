@@ -51,3 +51,58 @@ p2.then(resolve => {
         console.log(er)
     }
     )
+
+document.getElementById("btn_promise").addEventListener('click', () => {
+    let myvar = document.getElementById("txt_number");
+
+    let number = myvar.value
+    number = parseInt(number);
+
+    const p3 = new Promise((resolve, reject) => {
+
+        resolve(number)
+    })
+
+    p3.then((number) => {
+        number = number * 10;
+        return number;
+    })
+        .then((number) => {
+            number = number * 10;
+            return number;
+        })
+        .then((number) => {
+            number = number * 10;
+            return number;
+        })
+        .then((number) => {
+            number = number * 10;
+            return number;
+        })
+        .then((number) => {
+            number = number * 10;
+            return number;
+        })
+        .then((number) => {
+            number = number * 10;
+            console.log(number)
+
+            return number;
+        })
+        .then((number) => {
+            number = number * 10;
+            number = "434"
+            return number;
+        })
+        .then((number) => {
+            number = number * 10;
+            if (number === 20)
+                return number;
+        })
+        .then((number) => {
+            document.getElementById("txt_number").value = number
+        })
+    p3.catch(error => {
+        console.log(error)
+    })
+})
