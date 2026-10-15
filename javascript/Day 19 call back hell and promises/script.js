@@ -39,9 +39,8 @@ setTimeout(() => {
                         }, 2000)
                     }, 2000)
                 }, 2000)
-
-
             }, 2000)
         }, 2000)
     }, 2000)
 }, 2000)
+console.log("End of callbackfunction")
