@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="promise.js" defer></script>
+    <style>
+        .minibox {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border:2px;
+            
+            height: 300px;
+            width: 250px;
+            background-color: rgb(235, 191, 137);
+            border-radius: 20px;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -14,6 +31,15 @@
     <input type="button" value="Promise " id="btn_promise">
 
     <!-- <script src="script.js"></script> -->
+
+    <div class="minibox">
+        <input type="text" name="" id="uname">
+        <input type="password" name="" id="pass">
+        <input type="button" value="Login" id="login">
+
+        <label for="" id="login_stats">Login status</label>
+        <label for="" id="info"></label>
+    </div>
 
 </body>
 

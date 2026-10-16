@@ -1,4 +1,52 @@
 
+console.log("------------------Login code----------")
+
+let loginfunction = (uname, pass) => {
+
+    let usrname = uname;
+    let password = pass;
+    return new Promise((resolve, reject) => {
+
+        if (usrname === "admin" && password === "1234") {
+            resolve(
+                {
+                    uid: 1,
+                    username: "admin",
+                    designation: "devops"
+                }
+            )
+        }
+        else {
+            reject("User Not found ")
+        }
+    })
+
+}
+
+document.getElementById('login').addEventListener("click", () => {
+    let uname = document.getElementById('uname').value;
+    let pass = document.getElementById('pass').value;
+    loginfunction(uname, pass)
+        .then(resolve => {
+
+            document.getElementById('login_stats').innerText = "Login Successfull.."
+
+            document.getElementById('info').innerText = resolve.uid + " " + resolve.username + " " + resolve.designation + "  "
+        })
+        .catch(error => {
+            document.getElementById('login_stats').innerText = "Login Failed user not found.."
+            document.getElementById('info').innerText = "  "
+
+        })
+
+})
+
+
+console.log("------------------Login codecompleted----------")
+
+
+
+
 console.log("the promise is started")
 const p1 = new Promise((resolve, reject) => {
 
@@ -202,3 +250,6 @@ Promise.any([p_a, p_b, p_c, p_d]).then(result => console.log(result))
         console.log("|")
 
     })
+
+
+
