@@ -138,18 +138,67 @@ const prom_bb = new Promise(resolve => {
     }, 2000);
 })
 
-const prom_cc = new Promise(resolve => {
+const prom_cc = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("promise with 10 second completed")
+        // resolve("promise with 10 second completed")
+        reject("promise no 3 has failed fatal error")
     }, 10000);
 })
 
 const prom_dd = new Promise(resolve => {
     setTimeout(() => {
         resolve("promise with 15 second completed")
-    }, 15000);
+    }, 12000);
 })
 
 // Promise.race([prom_aa, prom_bb, prom_cc, prom_dd]).then(value => console.log("Race value ", value))
 
 Promise.all([prom_aa, prom_bb, prom_cc, prom_dd]).then(value => console.log("promise all ", value))
+    .catch(error => {
+        console.log(error)
+    })
+
+console.log("|")
+console.log("|")
+
+console.log("|")
+
+console.log("|")
+
+console.log("|")
+
+console.log("|")
+
+
+//promise allsettled
+
+const p_a = Promise.reject("failed")
+const p_b = Promise.resolve("Resolved 2")
+const p_c = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log("|")
+        console.log("|")
+        console.log("|")
+        reject("failed . . . .")
+    }, 5000);
+})
+const p_d = new Promise((resolve, reject) => {
+    reject("THis is also rejected . . . . ")
+})
+
+Promise.allSettled([p_a, p_b, p_c]).then(result => {
+    console.log("|")
+    console.log("|")
+
+    console.log(result)
+})
+
+Promise.any([p_a, p_b, p_c, p_d]).then(result => console.log(result))
+    .catch(error => {
+        console.log("|")
+
+        console.log(error)
+        console.log("|")
+        console.log("|")
+
+    })
