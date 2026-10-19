@@ -28,7 +28,10 @@ let domcreation = (products) => {
         api_title.classList.add("title")
         product_details.append(api_title)
         t_label.id = "lbl_titlename"
-        t_label.innerText = element.title;
+        let maxLength=15;
+        let protitle=element.title;
+        protitle=protitle.length > maxLength ? protitle.slice(0, maxLength).trim() + '...' : (protitle);
+        t_label.innerText = protitle;
         api_title.append(t_label);
         price_span.classList.add("price")
         product_details.append(price_span)

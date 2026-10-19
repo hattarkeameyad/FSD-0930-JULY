@@ -9,7 +9,7 @@
     flex-flow: row wrap;
     height: 100vh;
     width: 100vw;
-    gap: 5px;
+    gap: 20px;
     padding: 10px;
     box-sizing: border-box;
     color: rgb(225, 229, 233);
@@ -25,24 +25,30 @@
 .product {
     display: flex;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px 2px black;
+    box-shadow: 0px 0px 1px 2px black;
     gap: 2px;
-    background-color: rgb(211, 199, 183);
+    background-color: rgb(234, 231, 228);
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     height: 350px;
     width: 240px;
-    padding:10px;
+    padding: 10px;
     box-sizing: border-box;
+    transition: ease-in-out 0.5s;
 
+}
+
+#Buy:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
 
 }
 
 .imgholder {
-    height: 60%;
-    width: 65%;
+    height: 50%;
+    width: 60%;
 }
 
 .imgholder>img {
@@ -55,32 +61,37 @@
     display: flex;
     gap: 1px;
     flex-flow: column wrap;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
 }
 
-span{
+span {
     display: inline-block;
 }
-label{
+
+label {
     font-size: large;
     color: rgb(71, 66, 66);
     font-weight: 600;
     text-align: center;
+
 }
-#lbl_price{
+
+#lbl_price {
     font-weight: 400;
     font-size: large;
 }
 
-#Buy{
-  
+#Buy {
+
     font-size: large;
     padding: 10px 30px;
     font-weight: 500;
     border-radius: 10px;
     color: black;
-    
+    background-color: rgb(254, 181, 91);
 
-    
+
+
 }
